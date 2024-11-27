@@ -1,0 +1,126 @@
+:root {
+    --bg-color: #e3f1ff;
+    --text-color: #212529;
+    --card-bg: #ffffff;
+    --button-bg: #007bff;
+    --button-hover-bg: #0056b3;
+    --capsule-bg: #e9ecef;
+    --capsule-hover-bg: #68b1ff;
+    --capsule-text-color: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    overflow: hidden;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+.inner img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.capsule-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+    background-color: var(--capsule-hover-bg);
+    border-bottom: 1px solid #dee2e6;
+}
+
+.capsule {
+    background-color: var(--capsule-bg);
+    border: 1px solid #ced4da;
+    border-radius: 16px;
+    color: var(--capsule-text-color);
+    font-size: 12px;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.capsule:hover {
+    transform: scale(1.1);
+    background-color: var(--button-bg);
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 10px 5px;
+}
+
+.para {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 10px 15px;
+}
+
+.button {
+    background-color: var(--button-bg);
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 10px auto 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    max-width: 200px;
+}
+
+.button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+.button:focus {
+    outline: 3px solid #0056b3;
+    outline-offset: 2px;
+}
+
+/* Responsive Cards */
+@media (max-width: 600px) {
+    .inner {
+        max-width: 100%;
+    }
+}
