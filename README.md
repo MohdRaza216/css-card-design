@@ -15,16 +15,13 @@ A small project to create responsive card designs using HTML, CSS, and basic Jav
 - JavaScript (ES6+)
 
 ## Project Structure
-```
 css-card-design/
-│
 ├── css/
-│   └── styles.css     # CSS file for styling
+│   └── styles.css
 ├── js/
-│   └── script.js      # JavaScript for interactivity
-├── index.html         # Main HTML file
-└── README.md          # Project documentation
-```
+│   └── script.js
+├── index.html
+└── README.md
 
 ## Installation
 1. Clone the repository:
@@ -39,10 +36,15 @@ css-card-design/
 
 ## Usage
 - Hover over the cards to see the animations.
-- Click on a card to display an alert showing its title.
+- Click on a card to display an message showing its title.
 
 ## Screenshots
 ![image](https://github.com/user-attachments/assets/3e34e6c3-6301-4fc4-80c2-cbef5cfa5d68)
+![image](https://github.com/user-attachments/assets/13cd752b-41b7-4640-9643-a0a01535ce9d)
+![image](https://github.com/user-attachments/assets/05471c56-7ee9-47f0-a17a-c1cc501ba614)
+
+## Live Demo
+[View the Project on GitHub Pages](https://MohdRaza216.github.io/css-card-design/)
 
 ## Future Improvements
 - Add more cards with dynamic content.
